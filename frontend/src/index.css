@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* takes all remaining space */
+}
+
+/* Optional: page demo styling */
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Footer styling example */
+.footer {
+  background-color: #ffffff;
+  color: #4f7f5a;
+  text-align: center;
+  padding: 40px 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* takes all remaining space */
+}
+
+/* Optional: page demo styling */
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Footer styling example */
+.footer {
+  background-color: #ffffff;
+  color: #4f7f5a;
+  text-align: center;
+  padding: 40px 20px;
+}

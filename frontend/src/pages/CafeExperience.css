@@ -1,0 +1,194 @@
+.cafe-experience {
+  background: #ffffff;
+  padding: 60px 6%;
+  color: #1f1f1f;
+}
+
+/* HEADER */
+.experience-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.experience-header h2 {
+  font-size: 2.6rem;
+  color: #4f7f5a;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.experience-header p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* GRID */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 45px;
+}
+
+.experience-card {
+  background: #f7faf8;
+  border-radius: 18px;
+  padding: 30px 25px;
+  box-shadow: 0 12px 30px rgba(79, 127, 90, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+}
+
+.experience-card h3 {
+  font-size: 1.4rem;
+  color: #4f7f5a;
+  margin-bottom: 12px;
+}
+
+.experience-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* BANNER */
+.experience-banner {
+  background: linear-gradient(135deg, #4f7f5a, #6fa98a);
+  border-radius: 22px;
+  padding: 45px 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.experience-banner h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.experience-banner p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* STATS */
+.experience-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 2px solid #4f7f5a;
+  border-radius: 16px;
+  padding: 25px 10px;
+  text-align: center;
+}
+
+.stat-card h4 {
+  font-size: 2.2rem;
+  color: #4f7f5a;
+  margin-bottom: 6px;
+}
+
+.stat-card span {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ANIMATIONS */
+.fade-up {
+  animation: fadeUp 1s ease both;
+}
+
+.slide-left {
+  animation: slideLeft 1s ease both;
+}
+
+.slide-right {
+  animation: slideRight 1s ease both;
+}
+
+.slide-up {
+  animation: slideUp 1s ease both;
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

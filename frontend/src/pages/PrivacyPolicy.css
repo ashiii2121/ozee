@@ -1,0 +1,72 @@
+.privacy-page {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* Title */
+.privacy-container h1 {
+  font-size: 36px;
+  color: #4f7f5a;
+  margin-bottom: 10px;
+}
+
+.privacy-updated {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* Sections */
+.privacy-section {
+  margin-bottom: 30px;
+}
+
+.privacy-section h2 {
+  font-size: 22px;
+  color: #4f7f5a;
+  margin-bottom: 10px;
+}
+
+.privacy-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Smooth fade-in animation */
+.fade-in {
+  animation: fadeUp 0.9s ease-in-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .privacy-container h1 {
+    font-size: 28px;
+  }
+
+  .privacy-section h2 {
+    font-size: 20px;
+  }
+
+  .privacy-section p {
+    font-size: 14px;
+  }
+}

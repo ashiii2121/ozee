@@ -1,0 +1,148 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================= PAGE ================= */
+.contact-page {
+  background: #ffffff;
+  padding: 80px 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards ease-in-out;
+}
+
+/* ================= CONTAINER ================= */
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  color: #6b7280;
+  font-size: 1.05rem;
+}
+
+/* ================= CARD ================= */
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  border: 1px solid rgba(79, 127, 90, 0.25);
+  border-radius: 16px;
+  padding: 40px;
+}
+
+/* ================= INFO ================= */
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(79, 127, 90, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.icon svg {
+  width: 18px;
+  height: 18px;
+  fill: #4f7f5a;
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* ================= ACTION ================= */
+.contact-action h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+.contact-action textarea {
+  width: 100%;
+  min-height: 130px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(79, 127, 90, 0.4);
+  resize: none;
+  outline: none;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.contact-action textarea:focus {
+  border-color: #4f7f5a;
+}
+
+/* ================= BUTTON ================= */
+.whatsapp-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  text-align: center;
+  background: #4f7f5a;
+  color: #ffffff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 127, 90, 0.25);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================== */
+/* SMOOTH FADE-IN ANIMATION */
+/* ============================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,152 @@
+/* SECTION */
+.delivery-section {
+  width: 100%;
+  padding: 110px 6%;
+  background: #ffffff;
+}
+
+/* CONTAINER */
+.delivery-container {
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+/* CARD */
+.delivery-card {
+  background: #ffffff;
+  padding: 55px 45px;
+  border-radius: 26px;
+  border: 1px solid #eef1ef;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.delivery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.08);
+}
+
+/* ICON */
+.card-icon {
+  font-size: 42px;
+  color: #4f7f5a;
+}
+
+/* TITLE */
+.delivery-card h2 {
+  font-size: 36px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #1f3d2b;
+  font-family: "Poppins", sans-serif;
+}
+
+.delivery-card h2 span {
+  color: #4f7f5a;
+}
+
+/* TEXT */
+.card-text {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #555;
+  max-width: 95%;
+}
+
+/* OFFER (SUBTLE) */
+.delivery-offer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: #2a593b;
+  background: #f4f8f6;
+  padding: 14px 18px;
+  border-radius: 14px;
+}
+
+/* CALL BOX */
+.call-box {
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #e6ebe8;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.call-box p {
+  font-size: 15px;
+  color: #666;
+}
+
+/* CALL BUTTON */
+.call-box a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #4f7f5a;
+  padding: 12px 26px;
+  border-radius: 40px;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.call-box a:hover {
+  background: #2a593b;
+  transform: translateY(-2px);
+}
+
+/* IMAGE */
+.delivery-image {
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 26px;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.12);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .delivery-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .delivery-card {
+    text-align: center;
+    align-items: center;
+  }
+
+  .call-box a {
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-section {
+    padding: 70px 5%;
+  }
+
+  .delivery-card h2 {
+    font-size: 28px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+}

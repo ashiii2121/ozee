@@ -1,0 +1,411 @@
+/* ===============================
+   PAGE WRAPPER
+=============================== */
+.menu-page {
+  background: #ffffff;
+  padding: 70px 7%;
+  font-family: "Segoe UI", sans-serif;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards ease-in-out;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+.menu-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.menu-header h1 {
+  font-size: 2.8rem;
+  color: #4f7f5a;
+  margin-bottom: 10px;
+}
+
+.menu-header p {
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* ===============================
+   SEARCH BAR
+=============================== */
+.menu-search-container {
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px;
+  padding: 4px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.menu-search-box:focus-within {
+  border-color: #4f7f5a;
+  box-shadow: 0 6px 25px rgba(79, 127, 90, 0.15);
+  transform: translateY(-2px);
+}
+
+.search-icon {
+  width: 22px;
+  height: 22px;
+  color: #4f7f5a;
+  flex-shrink: 0;
+  margin-right: 12px;
+  stroke-width: 2.5;
+}
+
+.menu-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px 0;
+  font-size: 1rem;
+  color: #333;
+  background: transparent;
+}
+
+.menu-search-input::placeholder {
+  color: #999;
+  font-size: 0.95rem;
+}
+
+.search-clear-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #f0f0f0;
+  color: #666;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.search-clear-btn:hover {
+  background: #4f7f5a;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.search-results-text {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #4f7f5a;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   EMPTY SEARCH STATE
+=============================== */
+.empty-search-state {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 0.4s ease;
+}
+
+.empty-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.empty-search-state h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.empty-search-state p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.clear-search-btn {
+  padding: 12px 32px;
+  background: #4f7f5a;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(79, 127, 90, 0.2);
+}
+
+.clear-search-btn:hover {
+  background: #3d6347;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 127, 90, 0.3);
+}
+
+/* ===============================
+   GRID LAYOUT
+=============================== */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+/* ===============================
+   CARD
+=============================== */
+.menu-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #ececec;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   IMAGE
+=============================== */
+.menu-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+
+/* ===============================
+   CONTENT
+=============================== */
+.menu-content {
+  padding: 22px;
+}
+
+.menu-content h2 {
+  color: #4f7f5a;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* ===============================
+   LIST ITEM LAYOUT
+=============================== */
+.menu-content li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* LEFT SIDE */
+.item-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 3px;
+}
+
+.item-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-pieces {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #4f7f5a;
+}
+
+/* RIGHT SIDE */
+.item-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* PRICE */
+.item-price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1b1b1b;
+  white-space: nowrap;
+}
+
+/* ===============================
+   ORDER BUTTON
+=============================== */
+.order-btn {
+  border: 1px solid #4f7f5a;
+  background: transparent;
+  color: #4f7f5a;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  height: 32px;
+  min-width: 80px;
+}
+
+.order-btn:hover {
+  background: #4f7f5a;
+  color: #ffffff;
+}
+
+/* ===============================
+   TABLET
+=============================== */
+@media (max-width: 768px) {
+  .menu-page {
+    padding: 50px 5%;
+  }
+
+  .menu-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .menu-search-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .menu-search-box {
+    padding: 4px 16px;
+  }
+
+  .menu-search-input {
+    font-size: 0.95rem;
+    padding: 12px 0;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .menu-container {
+    gap: 28px;
+  }
+
+  .menu-content h2 {
+    font-size: 1.35rem;
+  }
+
+  .order-btn {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    height: 30px;
+    min-width: 70px;
+  }
+}
+
+/* ===============================
+   MOBILE - PERFECT BUTTON ALIGNMENT
+=============================== */
+@media (max-width: 480px) {
+
+  .menu-content li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .item-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .item-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .item-price {
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  /* SMALL FIXED BUTTON FOR MOBILE */
+  .order-btn {
+    width: 60px;
+    /* small fixed width */
+    height: 28px;
+    /* fixed height */
+    line-height: 28px;
+    /* vertically center text */
+    text-align: center;
+    padding: 0;
+    /* remove extra padding */
+    flex-shrink: 0;
+    /* prevent resizing */
+    font-size: 0.75rem;
+    /* smaller text for mobile */
+  }
+}
+
+/* ===============================
+   ANIMATION
+=============================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
