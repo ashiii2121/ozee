@@ -15,7 +15,7 @@ import Menu from "./pages/Menu";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import FriedChickenCombo from "./pages/FriedChickenCombo";
-import Terms from "./pages/TermsConditions.JSX";
+import Terms from "./pages/TermsConditions.jsx";
 import FAQ from "./pages/FAQ";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import MiamiFriedChicken from "./pages/MiamiFriedChicken";
